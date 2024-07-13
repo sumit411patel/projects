@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="css/weather.css">
+    <link rel="stylesheet" href="css/all.css">
+</head>
+<body>
+        <div class="card">
+            <div class="sec-1">
+                <div class="top">
+                    <div><span id="region">--</span></div>
+                    <div><span id="country"></span></div>
+                </div>
+                <div class="mid1" id="internet">
+                    <div><img src="Images/internet error.jpg" alt="" height="200px" width="200px"></div>
+                    <div style="font-weight: bolder;">check your internet!!</div>
+                </div>
+                <div class="mid2" id="internet">
+                    <div><img src="Images/location.jpg" alt="" height="200px" width="200px"></div>
+                    <div style="font-weight: bolder;">location not found!!</div>
+                </div>
+                <div class="bottom">
+                    <div class="left">
+                        <h2><span id="city-name"></span></h2>
+                        <p>Time: <span id="city-time">--</span></p>
+                    </div>
+                    <div class="right">
+                        <h1><span id="temp">--</span>&degc</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="sec-2">
+                <div class="top">
+                    <img src="Images/icons/icons8-sun-96.png" class="weather_img" alt="">
+                    <h1><span id="weather_con"></span></h1>
+                </div>
+                <hr>
+                <div class="bottom">
+                    <div class="search">
+                        <input type="text" id="city-input" placeholder="Search any city">
+                        <button type="submit" id="search">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                    </div>
+                    
+                    <p><span id="countryandregion">--</span></p>
+
+                    <div class="table">
+                        <table>
+                            <tr>
+                                <td>Feelslike:</td>
+                                <td><span id="feelslike">--</span>&degc</td>
+                            </tr>
+                            <tr>
+                                <td>Humidity</td>
+                                <td><span id="humidity">--</span>%</td>
+                            </tr>
+                            <tr>
+                                <td>UV Index</td>
+                                <td><span id="UV"></span></td>
+                            </tr>
+                            <tr>
+                                <td>Wind Speed</td>
+                                <td><span id="wind_speed">--</span>Km/h</td>
+                            </tr>
+                            <tr>
+                                <td>Wind direction</td>
+                                <td><span id="wind_dir">--</span></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+<script src="javascript/script.js"></script>
+</body>
+</html>
